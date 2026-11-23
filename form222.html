@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Student Registration Form</title>
+
+    <style>
+        body {
+            background-color: rgb(173, 230, 176);
+            font-family: Arial;
+        }
+
+        h2 {
+            text-align: center;
+            color: rgb(139, 0, 100);
+        }
+
+        form {
+            background-color: white;
+            width: 500px;
+            margin: auto;
+            padding: 25px;
+            border-radius: 10px;
+        }
+
+        fieldset {
+            border: 2px solid cyan;
+            border-radius: 8px;
+            padding: 15px;
+        }
+
+        legend {
+            color: darkblue;
+            font-weight: bold;
+        }
+
+        input, select, textarea {
+            padding: 6px;
+            border: 1px solid gray;
+            border-radius: 4px;
+        }
+
+        input[type="submit"] {
+            background-color: green;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            cursor: pointer;
+        }
+
+        input[type="reset"] {
+            background-color: red;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            cursor: pointer;
+        }
+    </style>
+</head>
+
+<body>
+
+<h2>Student Registration Form</h2>
+
+<form action="#" method="post">
+
+<fieldset>
+<legend>Personal Information</legend>
+
+<label>Student Name:</label>
+<input type="text" name="studentname"
+placeholder="Enter your name" required>
+<br><br>
+
+<label>Email:</label>
+<input type="email" name="email"
+placeholder="Enter your email" required>
+<br><br>
+
+<label>Password:</label>
+<input type="password" name="password"
+placeholder="Enter password" required>
+<br><br>
+
+<label>Age:</label>
+<input type="number" name="age" min="18" max="30">
+<br><br>
+
+<label>Gender:</label>
+<input type="radio" name="gender" value="Male"> Male
+<input type="radio" name="gender" value="Female"> Female
+<br><br>
+
+</fieldset>
+
+<br>
+
+<label>Skills:</label>
+<input type="checkbox" name="skills" value="HTML"> HTML
+<input type="checkbox" name="skills" value="CSS"> CSS
+<input type="checkbox" name="skills" value="JavaScript"> JavaScript
+<br><br>
+
+<label>Department:</label>
+<select name="department">
+<option value="">Select Department</option>
+<option value="CSE">CSE</option>
+<option value="ECE">ECE</option>
+<option value="IT">IT</option>
+<option value="EEE">EEE</option>
+<option value="ART'S">ARTS</option>
+<option value="BBL "></option>
+<option value="DIPLOMA"></option>
+</select>
+<br><br>
+
+<label>Select a Course:</label>
+<input list="courses" name="course">
+
+<datalist id="courses">
+<option value="CSE">
+<option value="ECE">
+<option value="IT">
+<option value="EEE">
+<option value="ART'S">
+    <option value="BBL">
+ <option value="DIPLOMA">
+</datalist>
+<br><br>
+
+<label>Date of Birth:</label>
+<input type="date" name="dob">
+<br><br>
+
+<label>Address:</label>
+<br>
+<textarea name="address" rows="4" cols="30"
+placeholder="Enter your address"></textarea>
+<br><br>
+
+<label>Upload Photo:</label>
+<input type="file" name="photo">
+<br><br>
+
+<center>
+<input type="submit" value="Register">
+<input type="reset" value="Clear">
+</center>
+
+</form>
+
+</body>
+</html>
+

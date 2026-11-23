@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Student Registration Form</title>
+
+    <style>
+        body {
+            background-color: rgb(108, 228, 228);
+            font-family: Arial;
+        }
+
+        h2 {
+            text-align: center;
+            color: rgb(225, 11, 11);
+        }
+
+        form {
+            background-color: rgba(21, 209, 118, 0.825);
+            width: 500px;
+            margin: auto;
+            padding: 25px;
+            border-radius: 10px;
+        }
+
+        fieldset {
+            border: 2px solid cyan;
+            border-radius: 8px;
+            padding: 15px;
+            margin-bottom: 15px;
+        }
+
+        legend {
+            color: darkblue;
+            font-weight: bold;
+        }
+
+        input, select, textarea {
+            padding: 6px;
+            border: 1px solid gray;
+            border-radius: 4px;
+        }
+
+        input[type="submit"] {
+            background-color: green;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            cursor: pointer;
+        }
+
+        input[type="reset"] {
+            background-color: red;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            cursor: pointer;
+        }
+    </style>
+</head>
+
+<body>
+
+<h2>Student Registration Form</h2>
+
+<form action="#" method="post">
+
+    <!-- Personal Information -->
+    <fieldset>
+        <legend>Personal Information</legend>
+
+        <label>Student Name:</label>
+        <input type="text" name="studentname"
+        placeholder="Enter your name" required>
+        <br><br>
+
+        <label>Email:</label>
+        <input type="email" name="email"
+        placeholder="Enter your email" required>
+        <br><br>
+
+        <label>Password:</label>
+        <input type="password" name="password"
+        placeholder="Enter password" required>
+        <br><br>
+
+        <label>Age:</label>
+        <input type="number" name="age" min="18" max="30">
+        <br><br>
+
+        <label>Gender:</label>
+        <input type="radio" name="gender" value="Male"> Male
+        <input type="radio" name="gender" value="Female"> Female
+        <br><br>
+    </fieldset>
+
+    <!-- Skills Information -->
+    <fieldset>
+        <legend>Skills Information</legend>
+
+        <label>Skills:</label><br><br>
+        <input type="checkbox" name="skills" value="HTML"> HTML
+        <input type="checkbox" name="skills" value="CSS"> CSS
+        <input type="checkbox" name="skills" value="JavaScript"> JavaScript
+        <br><br>
+    </fieldset>
+
+    <!-- Academic Information -->
+    <fieldset>
+        <legend>Academic Information</legend>
+
+        <label>Department:</label>
+        <select name="department">
+            <option value="">Select Department</option>
+            <option value="CSE">CSE</option>
+            <option value="ECE">ECE</option>
+            <option value="IT">IT</option>
+            <option value="EEE">EEE</option>
+            <option value="ART'S">ARTS</option>
+            <option value="BBL">BBL</option>
+            <option value="DIPLOMA">DIPLOMA</option>
+        </select>
+        <br><br>
+
+        <label>Select a Course:</label>
+        <input list="courses" name="course">
+
+        <datalist id="courses">
+            <option value="CSE">
+            <option value="ECE">
+            <option value="IT">
+            <option value="EEE">
+            <option value="ART'S">
+            <option value="BBL">
+            <option value="DIPLOMA">
+        </datalist>
+        <br><br>
+    </fieldset>
+
+    <!-- Other Information -->
+    <fieldset>
+        <legend>Other Information</legend>
+
+        <label>Date of Birth:</label>
+        <input type="date" name="dob">
+        <br><br>
+
+        <label>Address:</label>
+        <br><br>
+        <textarea name="address" rows="4" cols="30"
+        placeholder="Enter your address"></textarea>
+        <br><br>
+
+        <label>Upload Photo:</label>
+        <input type="file" name="photo">
+        <br><br>
+    </fieldset>
+
+    <center>
+        <input type="submit" value="Register">
+        <input type="reset" value="Clear">
+    </center>
+
+</form>
+
+</body>
+</html>
